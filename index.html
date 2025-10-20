@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Криптовалюта - это просто</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container bg-yellow">
+        <h1>Криптовалюта - это просто</h1>
+        <div class="ponyatiya bg-green">
+            <h2>При просмотре видео обращайте внимание на следующие понятия:</h2>
+            <ul class="list">
+                <li>Что такое криптовалюта?</li>
+                <li>Отличие криптовалюты от обычных денег</li>
+                <li>Что такое хеширование и как оно работает?</li>
+                <li>Анонимна ли криптовалюта</li>
+                <li>Что такое блокчейн?</li>
+                <li>Какое преимущество криптовалюты?</li>
+                <li>Что такое альткоины?</li>
+                <li>Что такое токены?</li>
+                <li>Что такое стейблкоины?</li>
+                <li>Что следует использовать для хранения криптовалюты?</li>
+            </ul>
+        </div>
+
+        <div class="block">
+            <iframe src="https://www.youtube.com/embed/hYNwuO-9Iuc?si=2fXVfYPpPRtw26GA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <button onclick="showPasswordModal()">Пройти тест</button>
+        </div>
+    </div>
+
+    <!-- Модальное окно для пароля -->
+    <div id="passwordModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closePasswordModal()">&times;</span>
+            <h2>Введите пароль для доступа к тесту</h2>
+            <input type="password" id="passwordInput" placeholder="Введите пароль">
+            <button onclick="checkPassword()">Продолжить</button>
+            <p id="passwordError" class="error-message"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
